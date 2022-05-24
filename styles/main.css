@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriOZQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrOB8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriASitOB8.ttf) format('truetype');
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=main.css.map */

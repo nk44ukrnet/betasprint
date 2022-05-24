@@ -1,0 +1,136 @@
+.header {
+
+  position: relative;
+
+  &__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+    gap: 5px;
+  }
+
+  &__logo {
+    margin-right: 236px;
+
+    img {
+      max-width: 220px;
+      object-fit: contain;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media (max-width: @tablet) {
+      order: -1;
+      display: block;
+    }
+  }
+
+  &__nav {
+    margin-right: 100px;
+
+    ul {
+      display: flex;
+      gap: 50px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    //align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  &__cart {
+    position: relative;
+    //align-self: flex-end;
+    justify-self: flex-end;
+
+    i {
+      font-size: 20px;
+    }
+
+    span {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      font-size: 12px;
+      z-index: 2;
+      line-height: 1.5;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -50%;
+        top: -2px;
+        background-color: @gray;
+        width: 21px;
+        height: 21px;
+        z-index: -1;
+        padding: 3px 6px;
+        border-radius: 50%;
+        transform: translateX(-12%);
+      }
+    }
+  }
+
+  &__btn {
+  }
+
+  @media (max-width: @notebook) {
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__logo, &__nav {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: @tablet) {
+    &__logo {
+      img {
+        width: 109px;
+      }
+    }
+
+    &__nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 25px;
+      z-index: 100;
+      background-color: @gray;
+      min-height: 100%;
+      height: 100vh;
+      transform: translateX(-110%);
+      transition: all .25s linear;
+
+      &.active {
+        transform: translateX(0);
+      overflow-y: auto;
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+  }
+  @media (max-width: @mobile) {
+    &__btn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.hero {
+  background-color: @bg;
+
+  &__holder {
+    background-image: url(../img/hero-oil.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-top: 213px;
+    padding-bottom: 210px;
+  }
+
+  &__container {
+
+  }
+
+  &__heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__subheading {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__cta {
+    padding: 15px 53px;
+  }
+  @media (max-width: @tablet) {
+    &__holder {
+      background-image: url(../img/hero-oil.png);
+      background-size: contain;
+      padding-top: 51px;
+      padding-bottom: 50px;
+    }
+    &__heading {
+      font-size: 36px;
+    }
+    &__subheading {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: @mobile) {
+    &__holder {
+      background-image: none;
+      padding-top: 30px;
+    }
+    &__heading {
+      font-size: 24px;
+    }
+    &__subheading {
+      font-size: 18px;
+    }
+    &__cta {
+      padding: 15px 60px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+.products {
+
+  &__tabs {
+    border-bottom: 1px solid @gray;
+    margin-bottom: 101px;
+  }
+  &__holder {
+    display: flex;
+    align-items: center;
+  }
+
+  &__tab {
+    min-height: 120px;
+    width: 25%;
+    flex: 1 1 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s linear;
+    &:not(:last-child) {
+      border-right: 1px solid @gray;
+    }
+    span {
+      display: flex;
+      gap: 15px;
+      i {
+        transform: translateY(5px);
+      }
+    }
+    &:hover {
+      background-color: @red;
+      color: @white;
+    }
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 341px));
+    gap:25px;
+  }
+
+  &__item {
+    background-color: @cardBg;
+    transition: all .25s linear;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      background-color: @white;
+      box-shadow: 0px 0px 7px rgba(0,0,0, 0.2);
+    }
+  }
+}
+
+
+.product {
+
+  &__image {
+    margin-bottom: 50px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  &__price {
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 36px;
+    small {
+      font-size: 14px;
+      font-weight: normal;
+      color: @gray2;
+    }
+  }
+}
+
+.hem {
+
+  &__container {
+    display: flex;
+    gap: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__item {
+    p {
+      text-indent: 25px;
+      margin-bottom: 10px;
+    }
+    &:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 30px;
+  }
+}
+
+.blog {
+
+  &__container {
+  }
+
+  &__heading {
+    margin-bottom: 35px;
+  }
+
+  &__holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 463px));
+    gap:25px;
+    margin-bottom: 70px;
+  }
+
+  &__item {
+  }
+
+  &__img {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+
+  &__info {
+  }
+}
+
+.feedback {
+
+  &__container {
+    display: flex;
+    gap: 26px;
+  }
+
+  &__item {
+    &:nth-child(1) {
+      background-color: @bg;
+      padding: 40px 60px;
+    }
+  }
+
+  &__heading {
+  }
+
+  &__text {
+  }
+
+  &__inputs {
+  }
+
+  &__input {
+  }
+
+  &__hint {
+  }
+
+  &__textarea {
+  }
+
+  &__footer {
+  }
+}
+
+
+
+
+
+
+
+
