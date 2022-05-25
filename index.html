@@ -180,24 +180,24 @@
                     </p>
                     <div class="feedback__inputs">
                         <div class="feedback__input">
-                            <input type="text" name="namn" required>
+                            <input type="text" name="namn" placeholder=" " required>
                             <span class="feedback__hint">Ditt namn<sup class="colored">*</sup></span>
                         </div>
                         <div class="feedback__input">
-                            <input type="text" name="foretag">
+                            <input type="text" name="foretag" placeholder=" ">
                             <span class="feedback__hint">Företag</span>
                         </div>
                         <div class="feedback__input">
-                            <input type="tel" name="tel">
+                            <input type="tel" name="tel" placeholder=" ">
                             <span class="feedback__hint">Telefon</span>
                         </div>
                         <div class="feedback__input">
-                            <input type="text" name="epost">
+                            <input type="text" name="epost" placeholder=" ">
                             <span class="feedback__hint">Din epost<sup class="colored">*</sup></span>
                         </div>
                     </div>
                     <div class="feedback__textarea">
-                        <textarea name="textarea"></textarea>
+                        <textarea name="textarea" placeholder=" "></textarea>
                         <span class="feedback__hint">Ditt meddelande</span>
                     </div>
                     <div class="feedback__footer">
@@ -207,14 +207,98 @@
                     </div>
                 </form>
             </div>
-<!--            <div class="feedback__item">-->
-                <img src="img/feedback.png" alt="feedback" class="feedback__item">
-<!--            </div>-->
+            <img src="img/feedback.png" alt="feedback" class="feedback__item">
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="img/logo.svg" alt="logo" class="footer__logo">
+            <div class="footer__section">
+                <div class="footer__box">
+                    <ul class="footer__ul">
+                        <li class="footer__li"><strong>POWERUP WEBBUTIK</strong></li>
+                        <li class="footer__li"><a href="#!">KÖPVILLKOR</a></li>
+                    </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><strong>ÅTERFÖRSÄLJARE</strong></li>
+                        <li class="footer__li"><a href="#!">SÄLJARE</a></li>
+                    </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><strong>KONTAKTA OSS</strong></li>
+                        <li class="footer__li"><a href="#!">OM OSS</a></li>
+                        <li class="footer__li"><a href="#!">FRÅGOR OCH SVAR</a></li>
+                        <li class="footer__li"><a href="#!">REFERENSER</a></li>
+                    </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><strong>SÄKERHETSDATABLAD</strong></li>
+                        <!--                    <li class="footer__li"><a href="#!"></a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__section">
+                <div class="footer__box">
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#!">POWER UP Sverige AB</a></li>
+                        <li class="footer__li"><strong>Industrigatan 5, 541 57 Skövde</strong></li>
+                    </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#!">Order & Kundtjänst:</a></li>
+                        <li class="footer__li"><strong><a href="tel:0951160520">0951-160 520</a></strong></li>
+                    </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#!">Försäljning & Marknad:</a></li>
+                        <li class="footer__li"><strong><a href="tel:0951160520">0951-160 520</a></strong></li>
+                    </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#!">Organisationsnummer:</a></li>
+                        <li class="footer__li"><strong><a href="tel:556455-3765">556455-3765</a></strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__section">
+                © 2021 POWER UP SVERIGE AB •
+            </div>
+        </div>
+    </footer>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartContent">
+
+                </div>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="emailModal" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailModal" name="phoneEmail" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneModal" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phoneModal" name="phoneModal" aria-describedby="phoneHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">FullName</label>
+                        <input type="text" class="form-control" id="fullName" name="fullNameModal" aria-describedby="phoneHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control btn btn-primary" id="order" aria-describedby="emailHelp" value="Order">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="script/script.js" defer></script>
 </body>
